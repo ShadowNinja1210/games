@@ -3,40 +3,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game</title>
+    <title>Flowers</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="message-container">
-      <div class="congratulations">
-        <img src="./Assets/Luffy_with_flowers.jpg" alt="Luffy_with_flowers" height="250" />
-        <h1>Welcome My Boa<br />😍💘</h1>
-        <p>You've successfully entered my heart</p>
-      </div>
-    </div>
-    <div id="container">
-      <div class="mbox">
-        <div id="maze">
-          <div id="thingie">
-            <div class="emo" id="emo">🥺</div>
-          </div>
-          <div id="home">
-            <div class="emo">❤️</div>
-          </div>
-          <div class="barrier" id="top"></div>
-          <div class="barrier" id="bottom"></div>
+    <div class="flower" id="flower">
+      <div class="f-wrapper">
+        <div class="flower__line"></div>
+        <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
         </div>
       </div>
-      <div class="controls">
-        <div class="buttons">
-          <button class="btn" id="bu"><div class="chevron">↑</div></button>
-          <button class="btn" id="bd"><div class="chevron">↓</div></button>
-          <button class="btn" id="bl"><div class="chevron">←</div></button>
-          <button class="btn" id="br"><div class="chevron">→</div></button>
+
+      <div class="f-wrapper f-wrapper--2">
+        <div class="flower__line"></div>
+        <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
         </div>
       </div>
+
+      <div class="f-wrapper f-wrapper--3">
+        <div class="flower__line"></div>
+        <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+        </div>
+      </div>
+      <div class="flower__glass"></div>
     </div>
 
+    <div>
+      <video id="videoPlayer" width="600" height="600" autoplay controls>
+        <source src="./Assets/Flower_video.mp4" type="video/mp4" />
+      </video>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
